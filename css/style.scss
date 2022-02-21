@@ -1,12 +1,14 @@
 :root{
     //Colors
     --hero-main-text-color: #fff;
-    --hero-cta-text-color: rgb(255, 201, 51);
-    --about-us-main-text-color: #000;
+    --hero-cta-text-color: #fce38a;
+    --main-text-color: #333;
+    --second-text-color: #999;
+    --section-header-underline-color: #f38181;
 
     //Fonts
     --section-header-h3: 'Kaushan Script', cursive;
-    --section-header-h2: font-family: 'Montserrat', sans-serif;
+    --section-header-h2: 'Montserrat', sans-serif;
 }
 
 body{
@@ -15,7 +17,7 @@ body{
     font-size: 1.3rem;
     line-height: 1.6;
     color: #333333;
-    background-color: bisque;
+    background-color: #fff;
 }
 
 //Debug
@@ -117,7 +119,7 @@ h1,h2,h3,h4,h5,ul{
             text-align: center;
             line-height: 1;
 
-            &::after{
+            &:after{
                 content: "";
                 display: block;
                 width: 60px;
@@ -151,17 +153,84 @@ h1,h2,h3,h4,h5,ul{
 //Content Sections
 .section-header{
     text-align: center;
-
+    margin-top: 2em;
     
+    .section-header-suptitle{
+        font-family: var(--section-header-h3);
+        font-weight: 900;
+        color: var(--main-text-color);
+    }
 
     .section-header-title{
+        font-family: var(--section-header-h2);
+        text-transform: uppercase;
 
+        &:after{
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 2.5em auto;
+
+            background-color: var(--section-header-underline-color);
+        }
+    }
+
+    .section-header-text{
+        color: var(--second-text-color);
+        font-size: 1rem;
+        margin-bottom: 4em;
     }
 }
 
-.section-header-suptitle{
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 900;
-    color: #fff;
+//About-us
+.about-us-img {
+    max-width: auto;
+    margin: 3em 0;
+
+    .about-us-img-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;                
+
+        li{
+            list-style: none;
+            padding: 0 1.6rem;
+
+            img{
+                width: 100%;
+            }
+        }    
+    }
 }
 
+//Statistic
+.about-us-statistic{
+    background-color: #95e1d3;
+    height: 18rem;
+    
+
+    .about-us-statistic-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between; 
+
+        li{
+            color: #fff;
+            width: 100%;
+            list-style: none;
+            text-align: center;
+            
+            h1{
+                font-size: 4.8rem;
+            }
+
+            h3{
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
