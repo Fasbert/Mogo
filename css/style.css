@@ -43,13 +43,13 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .header .content .logo a {
+  font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
   color: var(--hero-main-text-color);
 }
 
 .header .content .nav {
-  font-size: 1rem;
   vertical-align: center;
   text-transform: uppercase;
 }
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, ul {
 .header .content .nav li a {
   color: var(--hero-main-text-color);
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 1rem;
   -webkit-transition: color .3s linear;
   transition: color .3s linear;
 }
@@ -151,4 +151,9 @@ h1, h2, h3, h4, h5, ul {
   color: #333333;
   border-color: var(--hero-cta-text-color);
 }
+
+.section-header {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

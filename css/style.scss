@@ -1,7 +1,12 @@
 :root{
+    //Colors
     --hero-main-text-color: #fff;
     --hero-cta-text-color: rgb(255, 201, 51);
     --about-us-main-text-color: #000;
+
+    //Fonts
+    --section-header-h3: 'Kaushan Script', cursive;
+    --section-header-h2: font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -37,13 +42,13 @@ h1,h2,h3,h4,h5,ul{
         align-items: center;
 
         .logo a{
+            font-size: 2rem;
             font-weight: 700;
             text-decoration: none;
             color: var(--hero-main-text-color);
         }
 
         .nav{
-            font-size: 1rem;
             vertical-align: center;
             text-transform: uppercase;
 
@@ -54,7 +59,7 @@ h1,h2,h3,h4,h5,ul{
                 a{
                     color: var(--hero-main-text-color);
                     text-decoration: none;
-                    font-size: .8rem;
+                    font-size: 1rem;
 
                     transition: color .3s linear;
                 }
@@ -133,7 +138,6 @@ h1,h2,h3,h4,h5,ul{
             text-transform: uppercase;
             padding: 8px 30px;
             border: 3px solid var(--hero-main-text-color);
-
             transition: color .3s linear, border .3s linear;
 
             &:hover{
@@ -142,5 +146,22 @@ h1,h2,h3,h4,h5,ul{
             }
         }
     }
+}
+
+//Content Sections
+.section-header{
+    text-align: center;
+
+    
+
+    .section-header-title{
+
+    }
+}
+
+.section-header-suptitle{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 900;
+    color: #fff;
 }
 
