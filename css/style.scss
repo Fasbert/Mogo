@@ -1,5 +1,6 @@
 :root{
     --hero-main-text-color: #fff;
+    --hero-cta-text-color: rgb(255, 201, 51);
     --about-us-main-text-color: #000;
 }
 
@@ -94,6 +95,7 @@ h1,h2,h3,h4,h5,ul{
         width: 100%;
         max-width: 880px;
         margin: 0 auto;
+        text-align: center;
 
         .hero-title-suphead{
             color: var(--hero-main-text-color);
@@ -109,6 +111,35 @@ h1,h2,h3,h4,h5,ul{
             text-transform: uppercase;
             text-align: center;
             line-height: 1;
+
+            &::after{
+                content: "";
+                display: block;
+                width: 60px;
+                height: 3px;
+                margin: 60px auto;
+
+                background-color: var(--hero-main-text-color);
+            }
+        }
+
+        .hero-cta{
+            display: inline-block;
+            color: var(--hero-main-text-color);
+            vertical-align: top;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 8px 30px;
+            border: 3px solid var(--hero-main-text-color);
+
+            transition: color .3s linear, border .3s linear;
+
+            &:hover{
+                color: #333333;
+                border-color: var(--hero-cta-text-color);
+            }
         }
     }
 }
