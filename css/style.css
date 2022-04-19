@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/hero.gif) center no-repeat;
+  background: url(../img/hero.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .hero .hero-title-container .hero-cta:hover {
-  color: #333333;
+  color: #ffc933;
   border-color: var(--hero-cta-text-color);
 }
 

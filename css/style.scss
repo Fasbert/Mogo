@@ -104,7 +104,7 @@ h1,h2,h3,h4,h5,ul{
     flex-direction: column;
     justify-content: center;
 
-    background: url(../img/hero.gif) center no-repeat;
+    background: url(../img/hero.jpg) center no-repeat;
     background-size: cover;
 
     .hero-title-container{
@@ -152,7 +152,7 @@ h1,h2,h3,h4,h5,ul{
             transition: color .3s linear, border .3s linear;
 
             &:hover{
-                color: #333333;
+                color: rgb(255, 201, 51);
                 border-color: var(--hero-cta-text-color);
             }
         }
