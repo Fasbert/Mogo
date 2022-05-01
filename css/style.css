@@ -34,7 +34,8 @@ body{
 
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -246,7 +247,8 @@ body{
 }
 
 .about-item{
-  width: 380px;
+  width: 30%;
+  max-width: 380px;
   position: relative;
   background: #95e1de;
 }
@@ -370,3 +372,17 @@ body{
   z-index: 1;
 }
 /*Mobile Version*/
+@media (max-width: 1230px) {
+
+  .intro-suptitle{
+    font-size: 52px;
+  }
+  
+  .intro-title{
+    font-size: 120px;
+  }  
+
+  .about-item{
+    width: 100%;
+  }  
+}
